@@ -26,6 +26,8 @@ namespace charSumm
         string text;
         private void button2_Click(object sender, EventArgs e)
         {
+            //у текста введенного в поле textBox1 удаляем символ (ы)
+
             textBox1.Text = textBox1.Text.Substring(0, textBox1.Text.Length - 1);
         }
 
@@ -36,7 +38,12 @@ namespace charSumm
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
+            //текст введенный textBox1 в отображаем в  labelText
+
             labelText.Text = textBox1.Text;
+
+            //отображаем количество символов введенных в  textBox1 в labelCharCount
+
             labelCharCount.Text = textBox1.Text.Length.ToString();
 
         }
