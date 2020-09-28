@@ -23,7 +23,7 @@ namespace charSumm
         }
 
 
-        string text;
+        int labelMaxSimvolResult;
         private void button2_Click(object sender, EventArgs e)
         {
             //у текста введенного в поле textBox1 удаляем символ (ы)
@@ -46,6 +46,8 @@ namespace charSumm
 
             labelCharCount.Text = textBox1.Text.Length.ToString();
 
+            labelMaxSimvolResult = textBox1.MaxLength - textBox1.Text.Length;
+            labelMaxSimvol.Text = labelMaxSimvolResult.ToString();
         }
     }
 }

@@ -34,6 +34,8 @@
             this.labelText = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.labelCharCount = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.labelMaxSimvol = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBox1
@@ -79,23 +81,42 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(427, 55);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(182, 20);
+            this.label2.Size = new System.Drawing.Size(158, 20);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Количество символов:";
+            this.label2.Text = "Введено символов:";
             // 
             // labelCharCount
             // 
             this.labelCharCount.AutoSize = true;
-            this.labelCharCount.Location = new System.Drawing.Point(603, 55);
+            this.labelCharCount.Location = new System.Drawing.Point(649, 55);
             this.labelCharCount.Name = "labelCharCount";
             this.labelCharCount.Size = new System.Drawing.Size(0, 20);
             this.labelCharCount.TabIndex = 5;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(427, 84);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(222, 20);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Осталось ввести символов:";
+            // 
+            // labelMaxSimvol
+            // 
+            this.labelMaxSimvol.AutoSize = true;
+            this.labelMaxSimvol.Location = new System.Drawing.Point(655, 84);
+            this.labelMaxSimvol.Name = "labelMaxSimvol";
+            this.labelMaxSimvol.Size = new System.Drawing.Size(0, 20);
+            this.labelMaxSimvol.TabIndex = 7;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(734, 169);
+            this.Controls.Add(this.labelMaxSimvol);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.labelCharCount);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.labelText);
@@ -121,6 +142,8 @@
         private System.Windows.Forms.Label labelText;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label labelCharCount;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelMaxSimvol;
     }
 }
 
